@@ -32,7 +32,7 @@ public class BinaryGenerator {
             //binaryString.append(" ");
 
         }
-        System.out.println(binaryString.toString());
+        System.out.println("Binary String :- "+binaryString.toString());
         return binaryString.toString();
     }
 }
