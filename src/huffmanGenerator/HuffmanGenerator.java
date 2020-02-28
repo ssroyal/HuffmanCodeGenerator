@@ -57,6 +57,15 @@ public class HuffmanGenerator {
     }
 
     public String convertNormalStringToHuffmanString() {
-        return "";
+        HashMap<Character, String> map = new HashMap<>();
+        map = accessHashmap();
+        StringBuilder huff = new StringBuilder();
+        for (int i = 0; i < userInputStringInLowerCase.length(); i++) {
+            char one = userInputStringInLowerCase.charAt(i);
+            huff.append(map.get(one));
+
+        }
+        System.out.println("Huffman String :- "+huff.toString());
+        return huff.toString();
     }
 }
